@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>JSF JDBC Integration</title>
+
+</h:head>
+<h:body>
+	<h2>Car Details</h2>
+	<h:dataTable value="#{EstudianteBean.est}" var="alumno" border="2">
+		<h:column>
+			<f:facet name="header">Clave</f:facet>
+         #{alumno.cid}
+      </h:column>
+		<h:column>
+			<f:facet name="header">Nombre</f:facet>
+         #{alumno.cname}
+      </h:column>
+		<h:column>
+			<f:facet name="header">Trimestre</f:facet>
+           #{alumno.color}
+       </h:column>
+		<h:column>
+			<f:facet name="header">Requisito</f:facet>
+           #{alumno.requisito}
+       </h:column>
+	</h:dataTable>
+</h:body>
+</html>
